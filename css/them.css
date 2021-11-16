@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+
+.text-right {
+  text-align: right;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+}
+
+.container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+b {
+  font-weight: bold !important;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+sup {
+  vertical-align: super !important;
+  position: relative !important;
+  font-size: 75% !important;
+}

@@ -1,0 +1,383 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #000;
+  background: #000;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.color-change-5x {
+  -webkit-animation: color-change-5x 30s linear infinite alternate both;
+  animation: color-change-5x 30s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+.main {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.main-wrap-slider {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  height: 100%;
+  margin: 40px auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 116%;
+  color: #233255;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 116.1%;
+  margin-bottom: 20px;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+p {
+  color: #1C1C1C;
+  line-height: 150%;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.inner-wrap {
+  margin-top: 50px;
+}
+
+.sl-arr {
+  position: fixed;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: #fff;
+  transition: 0.2s;
+}
+.sl-arr svg {
+  width: 30px;
+  height: 50px;
+}
+.sl-arr:hover {
+  background: #5082FF;
+}
+
+.sl-arr_prev {
+  left: 20px;
+}
+
+.sl-arr_next {
+  right: 20px;
+}
+
+.slick-disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.slick-disabled:hover {
+  background: #fff;
+}
+
+ul.custom_paging li {
+  display: none;
+  color: #5082FF;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+ul.custom_paging li.slick-active {
+  display: block;
+}
+
+.hello-slider__item {
+  display: block;
+}
+.hello-slider__item h1 {
+  font-size: 50px;
+  color: #1C1C1C;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.bad {
+  color: #E62D32;
+}
+
+.good {
+  color: #5082FF;
+}
+
+.info h1 {
+  font-size: 60px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.border-left {
+  margin-left: 30px;
+  padding-left: 50px;
+  border-left: 3px solid #DFDFDF;
+}
+
+ul.list {
+  margin-bottom: 50px;
+}
+ul.list li {
+  padding-left: 35px;
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+ul.list li:before {
+  content: "—";
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
