@@ -142,10 +142,43 @@ summary {
   display: block;
 }
 
+button {
+  color: black;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color:black;
+}
+
+li.red:hover {
+  color: black;
+}
+
+.btn {
+  color: black;
+}
+
+.leader-cases {
+  &__item:first-child {
+    margin-top: 1000000000px;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+
+  }
+}
+
 body {
   font-family: 'Montserrat';
   color: #000;
-  background: #000;
+  background: aqua;
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1;
@@ -204,6 +237,7 @@ a {
   height: 100%;
   position: relative;
   display: flex;
+  line-height: 1.3;
 }
 
 .container {
@@ -383,19 +417,81 @@ ul.custom_paging {
   border-left: 3px solid #DFDFDF;
 }
 
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: red;
+}
+
 ul.list {
   margin-bottom: 50px;
   li {
     padding-left: 35px;
     position: relative;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    line-height: 1.6;
 
     &:before {
       content: '—';
       position: absolute;
       top: -3px;
       left: 0;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .hid-xs {
+    display: none;
+  }
+}
+
+#id {
+
+}
+
+.slick-slide img {
+  max-width: 600px;
+}
+
+.partners-cases__item{
+  padding: 20px;
+}
+
+.partners-cases__item {
+   padding: 30px;
+}
+
+@mixin red {
+  color: red;
+}
+
+
+
+.test-section {
+  font-size: 20px;
+  .main-block {
+
+    &-title-h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 130%;
+      text-align: center;
+      color: #394149;
+      margin-bottom: 45px;
+    }
+
+    &-text {
+      margin-bottom: 18px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #394149;
     }
   }
 }
